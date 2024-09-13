@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pimage from './preview.png'
 const theme = {
   palette: {
     primary: {
@@ -132,7 +131,7 @@ const styles = {
   },
 };
 
-const image  = new URL('./preview.png', import.meta.url).href
+const image  = new URL('./Preview.png', import.meta.url).href
 
 export default function HomeScreen() {
   return (
