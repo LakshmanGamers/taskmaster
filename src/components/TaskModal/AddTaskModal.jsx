@@ -65,18 +65,18 @@ function AddTaskModal(props) {
     
     const uid = localStorage.getItem("uid");
     const newData = {...taskData , userId : uid   };
-    const today = new Date();
-    const dueDate = new Date(taskData.duedate);
+    // const today = new Date();
+    // const dueDate = new Date(taskData.duedate);
 
-    // Check if the due date is in the past
-    if (dueDate < today) {
-      alert("Due date cannot be in the past");
-      return ;
-    }
-    if(!validateData(newData)){
-      alert("Please enter all fields");
-      return;
-    }
+    // // Check if the due date is in the past
+    // if (dueDate < today) {
+    //   alert("Due date cannot be in the past");
+    //   return ;
+    // }
+    // if(!validate(newData)){
+    //   alert("Please enter all fields");
+    //   return;
+    // }
     console.log("Task submitted successfully:", newData);
    
     addInDb(newData);
@@ -130,7 +130,7 @@ function AddTaskModal(props) {
           <Button variant="secondary" onClick={props.onClose} style={{ marginRight: "4px" }}>
             Cancel
           </Button>
-          <Button variant="primary" onClick={handleSubmit}  style={{backgroundColor:"#3f50b5"}} >
+          <Button variant="primary" onClick={handleSubmit}  style={{backgroundColor:"#3f50b5"}}  >
             Add
           </Button>
         </div>

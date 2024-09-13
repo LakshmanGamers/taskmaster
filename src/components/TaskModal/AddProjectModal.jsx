@@ -52,7 +52,7 @@ export default function AddProjectModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <input type="text" placeholder="Project Title" value={title} onChange={handleChange} />
+        <input type="text" placeholder="Project Title" value={title} onChange={handleChange} style={{width : "100%" , borderRadius : "10px" , display : "inline-block"}}/>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-between">
 
@@ -60,7 +60,7 @@ export default function AddProjectModal(props) {
         <Button variant="secondary" onClick={props.onClose}>
           Cancel
         </Button>
-        <Button variant="primary" onClick={handleSubmit}   >
+        <Button variant="primary" onClick={handleSubmit}   style={{backgroundColor:"#3f50b5"}}  >
           Add
         </Button>
 

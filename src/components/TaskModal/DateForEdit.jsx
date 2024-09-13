@@ -16,7 +16,7 @@ console.log(dateval);
       if(props.value == "date"){
         setInputType('date');
        const result =  formatDateToYYYYMMDD(props.value);
-        setDateVal(props.value);
+        setDateVal(result);
       }
     },[props.value]);
     const handleFocus = () => {

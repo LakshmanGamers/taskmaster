@@ -41,7 +41,7 @@
   }
   
   .card-checkbox:checked::before {
-    content: '✔'; /* Checkmark symbol */
+ 
     display: block;
     color: white; /* Checkmark color */
     font-size: 1em; /* Adjust size of the checkmark */

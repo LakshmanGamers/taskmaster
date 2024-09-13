@@ -10,7 +10,7 @@ export default function Date(props){
    
     return (
         <>
-         <input type={inputType}  name='duedate' onFocus={handleFocus} value={props.value} onChange={props.onChange} />
+         <input type={inputType}  name='duedate' onFocus={handleFocus} value={props.value} onChange={props.onChange} style={{ marginRight: "4px" }}/>
         </>
     )
 }

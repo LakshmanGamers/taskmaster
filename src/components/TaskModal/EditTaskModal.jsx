@@ -44,6 +44,8 @@ function EditTaskModal(props) {
      }
   }
 
+  
+
   function handleSubmit(event) {
     event.preventDefault(); 
     console.log(taskData);
@@ -102,7 +104,7 @@ function EditTaskModal(props) {
           <Button variant="secondary" onClick={()=>props.onClose(false)} style={{ marginRight: "4px" }}>
             Cancel
           </Button>
-          <Button variant="primary" onClick={handleSubmit}   >
+          <Button variant="primary" onClick={handleSubmit}  style={{backgroundColor:"#3f50b5"}} >
             Update
           </Button>
         </div>

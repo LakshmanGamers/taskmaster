@@ -19,7 +19,7 @@ const styles = {
     fontSize: "16px",
     textDecoration: "none",
     padding: "8px 15px",
-    borderRadius: "5px",
+    
     transition: "background-color 0.3s ease"
     },
   body: {
@@ -132,6 +132,8 @@ const styles = {
   },
 };
 
+const image  = new URL('./preview.png', import.meta.url).href
+
 export default function HomeScreen() {
   return (
     <div style={styles.body}>
@@ -153,7 +155,7 @@ export default function HomeScreen() {
             <button style={styles.contentButton}>Start Organizing</button>
           </Link>
         </div>
-        <img style={styles.image} src={pimage}/>
+        <img style={styles.image} src={image}/>
       </div>
       <div style={styles.footer}>
       <p style={styles.footerText}>Copyright &copy; 2024</p>

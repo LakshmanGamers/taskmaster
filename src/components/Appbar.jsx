@@ -28,7 +28,7 @@ export default function MenuAppBar(props) {
       localStorage.removeItem("user");
       localStorage.removeItem("uid");
       setTimeout(()=>{
-        navigate("/auth/login")
+        navigate("/")
       },1000);
     }
     catch(err){
